@@ -40,7 +40,7 @@ table = Table(ui, rows=len(data), columns=5, data=data, external_value=ui)
 table.place(relx=0.24, rely=0.2)
 
 addbuttonimg = tk.PhotoImage(file=resource_path(r'images\new_client_btn.png'))
-addbutton = tk.Button(ui, image=addbuttonimg, bg='#e6e6e6', borderwidth=0, activebackground='#e6e6e6', command=lambda: checkpassword())
+addbutton = tk.Button(ui, image=addbuttonimg, bg='#e6e6e6', borderwidth=0, activebackground='#e6e6e6', command=lambda: checkpassword(ui))
 addbutton.place(relx=0.125, rely=0.88, anchor='center')
 
 closebuttonimg = tk.PhotoImage(file=resource_path(r'images\close_button.png'))
